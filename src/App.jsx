@@ -1,10 +1,15 @@
-import { useState } from "react";
 import "./App.css";
+import ScrollToTop from "./ScrollToTop";
+import { Route, Routes } from "react-router-dom";
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
     <>
-      <div>Hello</div>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+      </Routes>
     </>
   );
 }

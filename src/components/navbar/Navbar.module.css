@@ -1,0 +1,185 @@
+.container {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px 15px 50px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.active {
+  background-color: rgba(255, 255, 255);
+  border-bottom: 1px solid var(--gray3);
+}
+
+.rightContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.dropdownContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.icon {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.faIcon {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: none;
+  font-size: 30px;
+}
+
+.modalContainer {
+  padding: 60px 70px 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.input {
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  padding: 10px;
+  width: 250px;
+}
+
+.modalHeading {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: var(--black);
+  margin: 0;
+  text-align: center;
+}
+
+.statusPara,
+.modalPara {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: var(--black);
+  text-align: center;
+}
+
+.modalPara {
+  margin-bottom: 30px;
+}
+
+.statusPara {
+  color: var(--orange);
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    padding: 15px 20px;
+  }
+
+  .rightContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 500px;
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--white);
+    transition: 1s;
+    /* transform: translateY(-100vh); */
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .responsive_nav {
+    transform: none;
+    display: flex;
+    border-bottom: 1px solid var(--gray3);
+    border-left: 1px solid var(--gray3);
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+  .faIcon {
+    display: block;
+  }
+
+  .dropdownContainer,
+  .buttonContainer,
+  .iconContainer {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  .modalContainer {
+    padding: 50px 30px 40px 10px;
+  }
+
+  .inputDiv {
+    flex-direction: column;
+  }
+}

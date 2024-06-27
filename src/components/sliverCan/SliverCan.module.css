@@ -1,0 +1,101 @@
+.container {
+  background: url("/images/sliver_can.png");
+  background-size: cover;
+  padding: 50px 0 0 0;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.contentDiv {
+  position: absolute;
+  /* margin-right: 700px; */
+  max-width: 500px;
+  left: 100px;
+  padding: 50px 80px 80px 80px;
+  border-top: 2px solid var(--white);
+  border-left: 2px solid var(--white);
+  border-right: 2px solid var(--white);
+}
+
+.subHeading {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.heading {
+  margin: 0;
+  font-family: "Istok Web", sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 125%;
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+.desc {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: var(--white);
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    height: 450px;
+  }
+
+  .contentDiv {
+    padding: 50px;
+    left: 50px;
+  }
+
+  .heading {
+    font-size: 56px;
+  }
+
+  .subHeading {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .desc {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    padding: 20px 20px 0 20px;
+  }
+
+  .contentDiv {
+    padding: 30px 20px;
+    left: 20px;
+    right: 20px;
+  }
+
+  .heading {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    height: 400px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .desc {
+    margin-bottom: 40px;
+  }
+}

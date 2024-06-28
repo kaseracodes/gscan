@@ -13,8 +13,6 @@ const Homepage = () => {
   const heading = `Your <span style="color:${COLORS.orange}">Trusted Partner</span><br /> in Silver Handling<br /> Systems`;
   const description = `• Reach your sustainability goals with <span style="color:${COLORS.orange}">our expert solution</span>, tailored to your company's needs •`;
 
-  console.log(heading);
-
   return (
     <div className={styles.contianer}>
       <Banner

@@ -1,0 +1,285 @@
+/* .container {
+
+} */
+
+.div1 {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 100px 0 0 0;
+}
+
+.div1 p,
+.div4P {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+  text-align: center;
+  max-width: 1000px;
+  letter-spacing: 2px;
+  line-height: 180%;
+}
+
+.innerDiv1 {
+  display: flex;
+  gap: 50px;
+  width: inherit;
+}
+
+.innerDiv1 img {
+  width: 750px;
+  margin-right: 0;
+}
+
+.div1Content {
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+.div1Content h5,
+.div3Content h5 {
+  font-family: "Istok Web", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--black);
+  /* text-align: center; */
+  text-transform: capitalize;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.div1Content ul,
+.div3Content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--black);
+  max-width: 400px;
+}
+
+.div2 {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  background-image: url("/images/sc/div2.png");
+  background-size: cover;
+}
+
+.div2 h3,
+.div4 h3 {
+  font-family: "Istok Web", sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.div2 p,
+.div4 span,
+.div4 button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--white);
+  max-width: 700px;
+}
+
+.div3 {
+  width: inherit;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.div3 img {
+  height: 700px;
+}
+
+.div3Content ul li {
+  max-width: 500px;
+}
+
+.div4 {
+  background-color: var(--blue);
+  padding: 100px 0;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.div4P {
+  color: var(--white);
+  max-width: 1000px;
+}
+
+.div4 button {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+}
+
+@media only screen and (max-width: 1300px) {
+  .div2 h3,
+  .div4 h3 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .innerDiv1 {
+    gap: 10px;
+  }
+
+  .innerDiv1 img {
+    width: 700px;
+  }
+
+  .div1Content {
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .div1 {
+    padding: 50px 0 0 0;
+  }
+
+  .div1 p,
+  .div4P {
+    padding: 0 20px;
+  }
+
+  .innerDiv1 img {
+    width: 600px;
+  }
+
+  .div1Content {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .div1Content h5,
+  .div3Content h5 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .div2 {
+    padding: 50px 20px;
+  }
+
+  .div2 h3,
+  .div4 h3 {
+    font-size: 45px;
+  }
+
+  .div2 p,
+  .div4 span,
+  .div4 button {
+    font-size: 18px;
+  }
+
+  .div3,
+  .div4 {
+    padding: 50px 20px;
+    gap: 20px;
+  }
+
+  .div4 button img {
+    width: 25px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .div1 {
+    padding-bottom: 50px;
+  }
+
+  .innerDiv1 {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .innerDiv1 img {
+    width: 520px;
+  }
+
+  .div3 {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .div1 {
+    gap: 10px;
+  }
+
+  .div1 p,
+  .div4P .li {
+    font-size: 15px;
+  }
+
+  .div1Content h5,
+  .div3Content h5 {
+    font-size: 28px;
+  }
+
+  .innerDiv1 {
+    gap: 0px;
+  }
+
+  .innerDiv1 img {
+    width: 100vw;
+  }
+
+  .div2 h3,
+  .div4 h3 {
+    font-size: 30px;
+  }
+
+  .div2 p,
+  .div4 span,
+  .div4 button,
+  .div4P {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .div3 img {
+    height: 500px;
+  }
+
+  .div4 button {
+    gap: 10px;
+  }
+
+  .div4 button img {
+    width: 20px;
+  }
+}

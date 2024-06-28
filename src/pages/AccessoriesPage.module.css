@@ -1,0 +1,408 @@
+.div1 {
+  background-image: url("/images/acs/div1_bg.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 100px;
+}
+
+.heading {
+  font-family: "Istok Web", sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  color: var(--white);
+  text-align: right;
+  text-transform: capitalize;
+  line-height: 120%;
+  margin: 0;
+}
+
+.div1p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--white);
+  text-align: right;
+}
+
+.para {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 2px;
+  line-height: 180%;
+}
+
+.div1Para {
+  text-align: right;
+  max-width: 700px;
+}
+
+.special {
+  color: var(--orange);
+}
+
+.div2 {
+  padding: 100px;
+}
+
+.subHeading {
+  font-family: "Istok Web", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--black);
+  text-transform: capitalize;
+  line-height: 120%;
+  margin: 0;
+}
+
+.para2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.div2Inner1,
+.div2Inner2 {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.div2Inner2 {
+  flex-direction: row-reverse;
+  margin-top: 100px;
+}
+
+.div2Image {
+  width: 500px;
+  height: auto;
+}
+
+.div3Para {
+  color: var(--black);
+  line-height: 150%;
+}
+
+.div3 {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--blue);
+  padding: 100px 0 0 0;
+}
+
+.heading2 {
+  font-family: "Istok Web", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 120%;
+  margin: 0;
+  font-size: 64px;
+  color: var(--white);
+  text-align: left;
+  padding-left: 50px;
+}
+
+.div3Para {
+  color: var(--white);
+  max-width: 300px;
+  font-weight: 400;
+}
+
+.div3Inner {
+  display: flex;
+  gap: 50px;
+}
+
+.div3Inner p {
+  margin-top: 150px;
+}
+
+.div3InnerImg {
+  height: 600px;
+}
+
+.div3Right {
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.div3Right p {
+  text-align: right;
+  max-width: 400px;
+}
+
+.div3RightImg {
+  width: 500px;
+}
+
+.div4 {
+  padding: 150px 0 200px 100px;
+  background-image: url("/images/acs/div4_bg.png");
+  background-size: cover;
+}
+
+.div4Para {
+  font-weight: 400;
+  color: var(--black);
+  max-width: 550px;
+  line-height: 150%;
+}
+
+.div5 {
+  padding: 100px;
+  display: flex;
+  gap: 50px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: var(--blue);
+}
+
+.div5Content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
+}
+
+.div5Content h5 {
+  width: 100%;
+  text-align: left;
+  color: var(--white);
+}
+
+.div5Para {
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+.div5Image {
+  height: 660px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .heading {
+    font-size: 65px;
+  }
+
+  .heading2 {
+    font-size: 50px;
+  }
+
+  .div3Right {
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .div2 {
+    padding: 100px 50px;
+  }
+
+  .div2Inner1,
+  .div2Inner2 {
+    gap: 20px;
+  }
+
+  .div3RightImg {
+    width: 400px;
+  }
+
+  .div3Para {
+    max-width: 280px;
+  }
+
+  .div5 {
+    padding: 100px 50px;
+  }
+
+  .div5Image {
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .heading {
+    font-size: 55px;
+  }
+
+  .heading2 {
+    font-size: 40px;
+  }
+
+  .div1 {
+    padding: 50px;
+    height: 60vh;
+  }
+
+  .div1p,
+  .para,
+  .para2 {
+    font-size: 18px;
+  }
+
+  .subHeading {
+    font-size: 28px;
+  }
+
+  .div2 {
+    padding: 50px;
+  }
+
+  .div3Inner {
+    gap: 20px;
+  }
+
+  .div3Right p {
+    max-width: 350px;
+  }
+
+  .div3RightImg {
+    width: 350px;
+  }
+
+  .div4 {
+    padding: 100px 20px 150px 50px;
+  }
+
+  .div5 {
+    padding: 50px;
+    flex-direction: column;
+  }
+
+  .div5Image {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .div2Inner1,
+  .div2Inner2 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .div2Inner2 {
+    margin-top: 50px;
+  }
+
+  .div3 {
+    padding: 50px 0;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 50px;
+  }
+
+  .heading2 {
+    text-align: center;
+    padding: 0;
+  }
+
+  .div3Right p {
+    text-align: center;
+    max-width: 1000px;
+  }
+
+  .div3Inner {
+    align-items: center;
+  }
+
+  .div3Inner p {
+    max-width: 600px;
+    margin: 0;
+    padding-right: 50px;
+  }
+
+  .div3InnerImg {
+    height: 400px;
+  }
+
+  .div3Right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .heading {
+    font-size: 40px;
+  }
+
+  .heading2 {
+    font-size: 30px;
+  }
+
+  .div1 {
+    padding: 50px 20px;
+  }
+
+  .div1p,
+  .para,
+  .para2 {
+    font-size: 15px;
+  }
+
+  .div1Para,
+  .div1p,
+  .heading {
+    text-align: center;
+    width: 100%;
+  }
+
+  .subHeading {
+    font-size: 20px;
+  }
+
+  .div2 {
+    padding: 50px 20px;
+  }
+
+  .div2Image {
+    width: 70vw;
+  }
+
+  .div3InnerImg {
+    height: 420px;
+    width: 150px;
+  }
+
+  .div3Inner p {
+    padding-right: 10px;
+  }
+
+  .div3Right {
+    padding: 0 10px;
+  }
+
+  .div3RightImg {
+    width: 80vw;
+  }
+
+  .div4 {
+    padding: 50px 10px 50px 10px;
+  }
+
+  .div5 {
+    padding: 50px 20px;
+  }
+
+  .div5Content {
+    gap: 10px;
+  }
+
+  .div5Image {
+    height: 400px;
+  }
+}

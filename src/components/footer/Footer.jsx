@@ -21,7 +21,7 @@ const Footer = () => {
             </h3>
           </div>
           <div className={styles.anchorDiv}>
-            <Link to="/about-us" className={styles.anchor}>
+            <Link to="/" className={styles.anchor}>
               Home
             </Link>
             <Link to="/about-us" className={styles.anchor}>
@@ -46,7 +46,7 @@ const Footer = () => {
 
           <div className={styles.mobileAnchorDiv}>
             <div className={styles.innerAnchorDiv}>
-              <Link to="/about-us" className={styles.anchor}>
+              <Link to="/" className={styles.anchor}>
                 Home
               </Link>
               <Link to="/about-us" className={styles.anchor}>

@@ -6,6 +6,8 @@ import { CoreValuesData } from "../assets/coreValuesData";
 import SliverCan from "../components/sliverCan/SliverCan";
 import Footer from "../components/footer/Footer";
 import Button from "../components/button/Button";
+import ContactUs from "../components/contactUs/ContactUs";
+import Accessories from "../components/accessories/Accessories";
 
 const Homepage = () => {
   const heading = `Your <span style="color:${COLORS.orange}">Trusted Partner</span><br /> in Silver Handling<br /> Systems`;
@@ -25,6 +27,8 @@ const Homepage = () => {
 
       <SliverCan />
 
+      <Accessories />
+
       <div className={styles.div5}>
         <div className={styles.innerDiv5}>
           <h5 className={styles.heading}>
@@ -40,6 +44,8 @@ const Homepage = () => {
 
         <img src="/images/div5.png" alt="image" />
       </div>
+
+      <ContactUs />
 
       <Footer />
     </div>

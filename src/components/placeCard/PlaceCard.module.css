@@ -1,0 +1,60 @@
+.container {
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 40px;
+  border: 1px solid var(--gray3);
+}
+
+.country {
+  font-family: "Istok Web", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+  margin: 0;
+}
+
+.address {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: var(--black);
+  margin: 10px 0 20px 0;
+}
+
+.contacts {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.phone {
+  text-decoration: none;
+  color: var(--dark-gray);
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    padding: 50px 20px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    width: 70vw;
+  }
+
+  .country {
+    font-size: 18px;
+  }
+
+  .address {
+    font-size: 13px;
+  }
+}

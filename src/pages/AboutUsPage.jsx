@@ -1,6 +1,9 @@
+import { ClientReview } from "../assets/clientReview";
 import Banner from "../components/Banner/Banner";
+import CarouselSection from "../components/carouselSection/CarouselSection";
 import ContactUs from "../components/contactUs/ContactUs";
 import Footer from "../components/footer/Footer";
+import QualityPolicy from "../components/qualityPolicy/QualityPolicy";
 import styles from "./AboutUsPage.module.css";
 
 const AboutUsPage = () => {
@@ -64,6 +67,14 @@ const AboutUsPage = () => {
           </p>
         </div>
       </div>
+
+      <QualityPolicy />
+
+      <CarouselSection
+        heading="What our Clients say about us"
+        description="Our partners include leading textile manufacturers and innovative jute producers who trust us for our superior quality products and reliable service. From industry giants to emerging enterprises, our clientele reflects our commitment to excellence"
+        cardData={ClientReview}
+      />
 
       <ContactUs />
 

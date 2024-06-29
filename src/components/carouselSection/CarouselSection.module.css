@@ -1,0 +1,108 @@
+.capabilitesContainer {
+  width: 100%;
+  /* padding: 5px 20px; */
+  padding-top: 30px;
+}
+
+.paraDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+}
+
+.para {
+  margin-bottom: 50px;
+  padding: 2px 100px;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--dark-gray);
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  max-width: 1000px;
+}
+
+.CapabilitiesCardDiv {
+  padding: 0px 50px 0px 50px;
+}
+
+.capabilitesInnerCardDiv {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  /* height: auto; */
+}
+
+.heading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 56px;
+  font-weight: 500;
+  color: var(--black);
+  text-align: center;
+  margin: 0;
+}
+
+.hr {
+  width: 20vw;
+  border: 1px solid var(--orange);
+}
+
+@media only screen and (max-width: 1300px) {
+  .heading {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .heading {
+    font-size: 40px;
+  }
+
+  .hr {
+    width: 24vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .CapabilitiesCardDiv {
+    padding: 0px 100px 50px 100px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .CapabilitiesCardDiv {
+    padding: 0px 30px 30px 30px;
+  }
+
+  .capabilitesContainer {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .para {
+    font-size: 15px;
+    padding: 0px 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .heading {
+    padding: 0 20px;
+  }
+
+  .capabilitesInnerCardDiv {
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .heading {
+    font-size: 30px;
+  }
+
+  .hr {
+    width: 30vw;
+  }
+}

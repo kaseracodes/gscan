@@ -1,0 +1,116 @@
+.container {
+  width: 520px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  background-color: var(--white);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.topDiv img {
+  height: 20px;
+  width: 20px;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+.topDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Inter", sans-serif;
+  color: var(--black);
+}
+
+.category {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.date {
+  font-size: 10px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.heading {
+  font-family: "Istok Web", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.desc {
+  width: auto;
+  text-wrap: wrap;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.imageDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.innerImageDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.image {
+  width: inherit;
+  max-height: 400px;
+}
+
+.mobileCardDiv {
+  display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 400px;
+  }
+
+  /* .image {
+      width: 200px;
+    } */
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    width: 240px;
+    padding: 20px;
+    display: none;
+  }
+
+  .image {
+    width: 120px;
+  }
+
+  .heading {
+    font-size: 18px;
+  }
+
+  .desc {
+    font-size: 13px;
+  }
+
+  .mobileCardDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* display: block; */
+  }
+}

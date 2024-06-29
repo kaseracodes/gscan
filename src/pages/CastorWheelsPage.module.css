@@ -154,6 +154,7 @@
   .div1 {
     flex-direction: column;
     padding: 50px;
+    padding-top: 150px;
   }
 
   .heading,
@@ -193,6 +194,7 @@
 
   .div1 {
     padding: 50px 20px;
+    padding-top: 150px;
     gap: 20px;
     height: auto;
   }

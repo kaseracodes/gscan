@@ -8,6 +8,7 @@ import Footer from "../components/footer/Footer";
 import Button from "../components/button/Button";
 import ContactUs from "../components/contactUs/ContactUs";
 import Accessories from "../components/accessories/Accessories";
+import Navbar from "../components/navbar/Navbar";
 
 const Homepage = () => {
   const heading = `Your <span style="color:${COLORS.orange}">Trusted Partner</span><br /> in Silver Handling<br /> Systems`;
@@ -15,6 +16,8 @@ const Homepage = () => {
 
   return (
     <div className={styles.contianer}>
+      <Navbar />
+
       <Banner
         imagePath="/images/home_banner.png"
         heading={heading}

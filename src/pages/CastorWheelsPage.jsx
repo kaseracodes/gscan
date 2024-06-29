@@ -2,11 +2,14 @@ import { CastorWheelsData } from "../assets/castorWheelsData";
 import CarouselSection from "../components/carouselSection/CarouselSection";
 import ContactUs from "../components/contactUs/ContactUs";
 import Footer from "../components/footer/Footer";
+import Navbar from "../components/navbar/Navbar";
 import styles from "./CastorWheelsPage.module.css";
 
 const CastorWheelsPage = () => {
   return (
     <div className={styles.container}>
+      <Navbar />
+
       <div className={styles.div1}>
         <div className={styles.div1Content}>
           <h3 className={styles.heading}>Smooth Moves</h3>

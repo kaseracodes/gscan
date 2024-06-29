@@ -1,11 +1,14 @@
 import { COLORS } from "../assets/constants";
 import ContactUs from "../components/contactUs/ContactUs";
 import Footer from "../components/footer/Footer";
+import Navbar from "../components/navbar/Navbar";
 import styles from "./AccessoriesPage.module.css";
 
 const AccessoriesPage = () => {
   return (
     <div className={styles.container}>
+      <Navbar />
+
       <div className={styles.div1}>
         <h3 className={styles.heading}>Accessories</h3>
         <p className={styles.div1p}>

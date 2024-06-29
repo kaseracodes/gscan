@@ -5,11 +5,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px 15px 50px;
+  padding: 10px 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: black; */
+  margin-bottom: -100px;
+}
+
+.logoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logoDiv h5 {
+  font-family: "Istok Web", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0;
 }
 
 .logo {
-  height: 40px;
+  height: 50px;
 }
 
 .active {
@@ -21,41 +40,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
-.iconContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.buttonContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.dropdownContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.icon {
+.link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  padding: 5px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  text-decoration: none;
 }
 
 .faIcon {
@@ -66,37 +59,6 @@
   outline: none;
   display: none;
   font-size: 30px;
-}
-
-.modalContainer {
-  padding: 60px 70px 40px 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.inputDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.input {
-  font-family: "Roboto", sans-serif;
-  border-radius: 5px;
-  padding: 10px;
-  width: 250px;
-}
-
-.modalHeading {
-  font-size: 24px;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-  color: var(--black);
-  margin: 0;
-  text-align: center;
 }
 
 .statusPara,
@@ -117,9 +79,16 @@
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 1150px) {
+  .container {
+    padding: 10px 50px;
+    gap: 15px;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .container {
-    padding: 15px 20px;
+    padding: 10px 20px;
   }
 
   .rightContainer {
@@ -132,7 +101,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     background-color: var(--white);
     transition: 1s;
     /* transform: translateY(-100vh); */
@@ -164,6 +133,10 @@
   .iconContainer {
     flex-direction: column;
   }
+
+  .logoDiv h5 {
+    font-size: 42px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -175,11 +148,7 @@
     height: 35px;
   }
 
-  .modalContainer {
-    padding: 50px 30px 40px 10px;
-  }
-
-  .inputDiv {
-    flex-direction: column;
+  .logoDiv h5 {
+    font-size: 36px;
   }
 }

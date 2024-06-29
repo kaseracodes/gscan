@@ -7,6 +7,7 @@
   justify-content: center;
   height: 100vh;
   padding: 0 100px;
+  padding-top: 30px;
 }
 
 .heading {
@@ -243,6 +244,7 @@
   .div1 {
     padding: 50px;
     height: 60vh;
+    padding-top: 100px;
   }
 
   .div1p,
@@ -346,6 +348,7 @@
 
   .div1 {
     padding: 50px 20px;
+    padding-top: 100px;
   }
 
   .div1p,

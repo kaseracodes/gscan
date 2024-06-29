@@ -3,6 +3,7 @@ import Banner from "../components/Banner/Banner";
 import CarouselSection from "../components/carouselSection/CarouselSection";
 import ContactUs from "../components/contactUs/ContactUs";
 import Footer from "../components/footer/Footer";
+import Navbar from "../components/navbar/Navbar";
 import QualityPolicy from "../components/qualityPolicy/QualityPolicy";
 import styles from "./AboutUsPage.module.css";
 
@@ -12,6 +13,8 @@ const AboutUsPage = () => {
 
   return (
     <div className={styles.container}>
+      <Navbar />
+
       <Banner
         imagePath="/images/about_us_banner.png"
         heading={heading}

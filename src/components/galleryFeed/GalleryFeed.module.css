@@ -2,7 +2,8 @@
   background-color: var(--gray4);
   display: flex;
   justify-content: space-between;
-  height: 1000px;
+  height: 88vh;
+  padding-top: 100px;
 }
 
 .leftDiv {

@@ -20,7 +20,7 @@ const SliverCan = () => {
         <Button
           content="Know More"
           bgColor={COLORS.orange}
-          onClick={() => navigate("/mobility")}
+          onClick={() => navigate("/sliver-can")}
         />
       </div>
     </div>

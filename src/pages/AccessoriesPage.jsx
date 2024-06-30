@@ -1,13 +1,41 @@
+import { useEffect } from "react";
 import { COLORS } from "../assets/constants";
 import ContactUs from "../components/contactUs/ContactUs";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
 import styles from "./AccessoriesPage.module.css";
+import { useLocation } from "react-router-dom";
 
 const AccessoriesPage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const sectionId = hash.substring(1); // Remove the "#" from the hash
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    };
+
+    // Call the handler initially in case there's already a hash in the URL
+    handleHashChange();
+
+    // Add event listener for hash change
+    window.addEventListener("hashchange", handleHashChange);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, [location]);
+
   return (
     <div className={styles.container}>
-      <Navbar />
+      <Navbar pageType="accessories" />
 
       <div className={styles.div1}>
         <h3 className={styles.heading}>Accessories</h3>
@@ -178,7 +206,7 @@ const AccessoriesPage = () => {
 
       <ContactUs />
 
-      <Footer />
+      <Footer pageType="accessories" />
     </div>
   );
 };

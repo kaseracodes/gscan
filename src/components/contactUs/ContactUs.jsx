@@ -5,7 +5,7 @@ import styles from "./ContactUs.module.css";
 
 const ContactUs = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="contactDiv">
       <PlaceCard
         imagePath="/images/building.png"
         office="29/3 B.T. Road, Kolkata – 700056"

@@ -1,15 +1,46 @@
+import { useEffect } from "react";
 import { COLORS } from "../assets/constants";
 import Banner from "../components/Banner/Banner";
 import ContactUs from "../components/contactUs/ContactUs";
 import Footer from "../components/footer/Footer";
+import Navbar from "../components/navbar/Navbar";
 import styles from "./SliverCanPage.module.css";
+import { useLocation } from "react-router-dom";
 
 const SliverCanPage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const sectionId = hash.substring(1); // Remove the "#" from the hash
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    };
+
+    // Call the handler initially in case there's already a hash in the URL
+    handleHashChange();
+
+    // Add event listener for hash change
+    window.addEventListener("hashchange", handleHashChange);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, [location]);
+
   const heading = `Premium <span style="color:${COLORS.orange}">HDPE Sliver</span> Cans`;
   const description = `• Enhancing <span style="color:${COLORS.orange}">Efficiency and Quality</span> in Sliver Handling  •`;
 
   return (
     <div className={styles.container}>
+      <Navbar pageType="sliver-can" />
+
       <Banner
         imagePath="/images/sliver_can_banner.png"
         heading={heading}
@@ -106,7 +137,7 @@ const SliverCanPage = () => {
 
       <ContactUs />
 
-      <Footer />
+      <Footer pageType="sliver-can" />
     </div>
   );
 };

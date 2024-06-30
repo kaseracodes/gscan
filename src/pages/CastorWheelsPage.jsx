@@ -1,14 +1,42 @@
+import { useEffect } from "react";
 import { CastorWheelsData } from "../assets/castorWheelsData";
 import CarouselSection from "../components/carouselSection/CarouselSection";
 import ContactUs from "../components/contactUs/ContactUs";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
 import styles from "./CastorWheelsPage.module.css";
+import { useLocation } from "react-router-dom";
 
 const CastorWheelsPage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const sectionId = hash.substring(1); // Remove the "#" from the hash
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    };
+
+    // Call the handler initially in case there's already a hash in the URL
+    handleHashChange();
+
+    // Add event listener for hash change
+    window.addEventListener("hashchange", handleHashChange);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, [location]);
+
   return (
     <div className={styles.container}>
-      <Navbar />
+      <Navbar pageType="castor" />
 
       <div className={styles.div1}>
         <div className={styles.div1Content}>
@@ -100,7 +128,7 @@ const CastorWheelsPage = () => {
 
       <ContactUs />
 
-      <Footer />
+      <Footer pageType="castor" />
     </div>
   );
 };

@@ -4,8 +4,9 @@ import { COLORS } from "../../assets/constants";
 import { Link, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import DropdownButton from "../dropdownButton/DropdownButton";
 
-const Navbar = ({ bgColor }) => {
+const Navbar = ({ bgColor, pageType }) => {
   const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -120,7 +121,7 @@ const Navbar = ({ bgColor }) => {
         >
           About Us
         </Link>
-        <Link
+        {/* <Link
           to="/"
           className={styles.link}
           style={{
@@ -132,9 +133,24 @@ const Navbar = ({ bgColor }) => {
           }}
         >
           Products
-        </Link>
+        </Link> */}
+        <DropdownButton
+          content="Products"
+          textColor={
+            isSmallScreen
+              ? COLORS.blue
+              : !isScrolled || bgColor
+              ? COLORS.white
+              : COLORS.blue
+          }
+          modalContents={[
+            { desc: "Sliver Can", link: "/sliver-can" },
+            { desc: "Accessories", link: "/accessories" },
+            { desc: "Castor", link: "/castor" },
+          ]}
+        />
         <Link
-          to="/"
+          to="/about-us#clients"
           className={styles.link}
           style={{
             color: isSmallScreen
@@ -160,7 +176,7 @@ const Navbar = ({ bgColor }) => {
           Gallery
         </Link>
         <Link
-          to="/contact-us"
+          to={`/${pageType}#contactDiv`}
           className={styles.link}
           style={{
             color: isSmallScreen

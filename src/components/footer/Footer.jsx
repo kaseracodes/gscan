@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import { Link, useNavigate } from "react-router-dom";
 import { COLORS } from "../../assets/constants";
 import LinkedinIcon from "../../icons/LinkedinIcon";
 import styles from "./Footer.module.css";
 
-const Footer = () => {
+const Footer = ({ pageType }) => {
   const navigate = useNavigate();
 
   return (
@@ -39,7 +40,7 @@ const Footer = () => {
             <Link to="/gallery" className={styles.anchor}>
               Gallery
             </Link>
-            <Link to="/contact-us" className={styles.anchor}>
+            <Link to={`/${pageType}#contactDiv`} className={styles.anchor}>
               Contact Us
             </Link>
           </div>
@@ -64,7 +65,7 @@ const Footer = () => {
               <Link to="/gallery" className={styles.anchor}>
                 Gallery
               </Link>
-              <Link to="/contact-us" className={styles.anchor}>
+              <Link to={`/${pageType}#contactDiv`} className={styles.anchor}>
                 Contact Us
               </Link>
             </div>

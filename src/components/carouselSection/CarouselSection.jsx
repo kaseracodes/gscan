@@ -5,7 +5,7 @@ import styles from "./CarouselSection.module.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const CarouselSection = ({ heading, description, cardData }) => {
+const CarouselSection = ({ heading, description, cardData, divId }) => {
   const responsiveCapabilities = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -42,7 +42,7 @@ const CarouselSection = ({ heading, description, cardData }) => {
   }, []);
 
   return (
-    <div className={styles.capabilitesContainer}>
+    <div className={styles.capabilitesContainer} id={divId}>
       <h5 className={styles.heading}>{heading}</h5>
       <hr className={styles.hr} />
 

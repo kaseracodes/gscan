@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { ClientReview } from "../assets/clientReview";
 import Banner from "../components/Banner/Banner";
 import CarouselSection from "../components/carouselSection/CarouselSection";
@@ -6,14 +7,41 @@ import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
 import QualityPolicy from "../components/qualityPolicy/QualityPolicy";
 import styles from "./AboutUsPage.module.css";
+import { useLocation } from "react-router-dom";
 
 const AboutUsPage = () => {
+  const location = useLocation();
+
   const heading = `Crafting<br />Excellence in<br />Sliver Can Solutions`;
   const description = `• Over 30 Years of Innovation, Quality, and Trust •`;
 
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const sectionId = hash.substring(1); // Remove the "#" from the hash
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    };
+
+    // Call the handler initially in case there's already a hash in the URL
+    handleHashChange();
+
+    // Add event listener for hash change
+    window.addEventListener("hashchange", handleHashChange);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, [location]);
+
   return (
     <div className={styles.container}>
-      <Navbar />
+      <Navbar pageType="about-us" />
 
       <Banner
         imagePath="/images/about_us_banner.png"
@@ -77,11 +105,12 @@ const AboutUsPage = () => {
         heading="What our Clients say about us"
         description="Our partners include leading textile manufacturers and innovative jute producers who trust us for our superior quality products and reliable service. From industry giants to emerging enterprises, our clientele reflects our commitment to excellence"
         cardData={ClientReview}
+        divId="clients"
       />
 
       <ContactUs />
 
-      <Footer />
+      <Footer pageType="about-us" />
     </div>
   );
 };

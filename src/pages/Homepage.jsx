@@ -70,7 +70,7 @@ const Homepage = () => {
           </p>
 
           <Button
-            content="Insights"
+            content="Know More"
             bgColor={COLORS.orange}
             onClick={() => navigate("/castor")}
           />

@@ -53,7 +53,7 @@ const AccessoriesPage = () => {
         </p>
       </div>
 
-      <div className={styles.div2}>
+      <div className={styles.div2} id="1">
         <div className={styles.div2Inner1}>
           <div className={styles.contentDiv}>
             <h5 className={styles.subHeading}>
@@ -78,7 +78,7 @@ const AccessoriesPage = () => {
           />
         </div>
 
-        <div className={styles.div2Inner2}>
+        <div className={styles.div2Inner2} id="0">
           <div className={styles.contentDiv}>
             <h5 className={styles.subHeading}>Top Rings and Bands</h5>
             <p className={styles.para2}>
@@ -103,7 +103,7 @@ const AccessoriesPage = () => {
       </div>
 
       <div className={styles.div3}>
-        <div className={styles.div3Left}>
+        <div className={styles.div3Left} id="3">
           <h5 className={styles.heading2}>
             HDPE Body Sheet &<br />
             Bottom Binders
@@ -125,7 +125,7 @@ const AccessoriesPage = () => {
           </div>
         </div>
 
-        <div className={styles.div3Right}>
+        <div className={styles.div3Right} id="2">
           <h5 className={styles.subHeading} style={{ color: COLORS.white }}>
             Top & Bottom Covers
           </h5>
@@ -144,7 +144,7 @@ const AccessoriesPage = () => {
         </div>
       </div>
 
-      <div className={styles.div4}>
+      <div className={styles.div4} id="4">
         <h5 className={styles.subHeading}>
           Springs that Perform:
           <br />

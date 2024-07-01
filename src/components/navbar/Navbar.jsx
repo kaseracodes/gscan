@@ -47,7 +47,7 @@ const Navbar = ({ bgColor, pageType }) => {
   return (
     <div
       className={`${styles.container} ${
-        isScrolled && !bgColor ? styles.active : ""
+        isScrolled || bgColor ? styles.active : ""
       }`}
       style={{ backgroundColor: bgColor && bgColor }}
     >
@@ -56,7 +56,7 @@ const Navbar = ({ bgColor, pageType }) => {
           // src={isScrolled ? "/images/Logo2.png" : "/images/Logo.png"}
           src={
             bgColor
-              ? "/images/Logo.png"
+              ? "/images/Logo2.png"
               : isScrolled
               ? "/images/Logo2.png"
               : "/images/Logo.png"
@@ -68,9 +68,9 @@ const Navbar = ({ bgColor, pageType }) => {
         <h5
           style={{
             color: bgColor
-              ? COLORS.white
+              ? COLORS.blue
               : isScrolled
-              ? COLORS.blue3
+              ? COLORS.blue
               : COLORS.white,
           }}
         >
@@ -83,27 +83,15 @@ const Navbar = ({ bgColor, pageType }) => {
           navbarOpen ? styles.responsive_nav : ""
         }`}
       >
-        {/* <div className={styles.dropdownContainer}>
-          <DropdownButton
-            textColor={isScrolled || navbarOpen ? COLORS.black : textColor}
-            content="About"
-            modalContents={[
-              { desc: "Who Are We?", link: "/about-us" },
-              { desc: "Career", link: "/careers" },
-            ]}
-            index="1"
-          />
-        </div> */}
-
         <Link
           to="/"
           className={styles.link}
           style={{
             color: isSmallScreen
               ? COLORS.blue
-              : !isScrolled || bgColor
-              ? COLORS.white
-              : COLORS.blue,
+              : isScrolled || bgColor
+              ? COLORS.blue
+              : COLORS.white,
           }}
         >
           Home
@@ -114,9 +102,9 @@ const Navbar = ({ bgColor, pageType }) => {
           style={{
             color: isSmallScreen
               ? COLORS.blue
-              : !isScrolled || bgColor
-              ? COLORS.white
-              : COLORS.blue,
+              : isScrolled || bgColor
+              ? COLORS.blue
+              : COLORS.white,
           }}
         >
           About Us
@@ -127,9 +115,9 @@ const Navbar = ({ bgColor, pageType }) => {
           style={{
             color: isSmallScreen
               ? COLORS.blue
-              : !isScrolled || bgColor
-              ? COLORS.white
-              : COLORS.blue,
+              : isScrolled || bgColor
+              ? COLORS.blue
+              : COLORS.white,
           }}
         >
           Products
@@ -139,9 +127,9 @@ const Navbar = ({ bgColor, pageType }) => {
           textColor={
             isSmallScreen
               ? COLORS.blue
-              : !isScrolled || bgColor
-              ? COLORS.white
-              : COLORS.blue
+              : isScrolled || bgColor
+              ? COLORS.blue
+              : COLORS.white
           }
           modalContents={[
             { desc: "Sliver Can", link: "/sliver-can" },
@@ -155,9 +143,9 @@ const Navbar = ({ bgColor, pageType }) => {
           style={{
             color: isSmallScreen
               ? COLORS.blue
-              : !isScrolled || bgColor
-              ? COLORS.white
-              : COLORS.blue,
+              : isScrolled || bgColor
+              ? COLORS.blue
+              : COLORS.white,
           }}
         >
           Clients
@@ -168,9 +156,9 @@ const Navbar = ({ bgColor, pageType }) => {
           style={{
             color: isSmallScreen
               ? COLORS.blue
-              : !isScrolled || bgColor
-              ? COLORS.white
-              : COLORS.blue,
+              : isScrolled || bgColor
+              ? COLORS.blue
+              : COLORS.white,
           }}
         >
           Gallery
@@ -181,9 +169,9 @@ const Navbar = ({ bgColor, pageType }) => {
           style={{
             color: isSmallScreen
               ? COLORS.blue
-              : !isScrolled || bgColor
-              ? COLORS.white
-              : COLORS.blue,
+              : isScrolled || bgColor
+              ? COLORS.blue
+              : COLORS.white,
           }}
         >
           Contact Us
@@ -202,9 +190,9 @@ const Navbar = ({ bgColor, pageType }) => {
         className={styles.faIcon}
         style={{
           color: bgColor
-            ? COLORS.white
+            ? COLORS.blue
             : isScrolled
-            ? COLORS.blue3
+            ? COLORS.blue
             : COLORS.white,
         }}
         onClick={showNavbar}

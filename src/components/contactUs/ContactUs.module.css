@@ -85,6 +85,7 @@
 @media only screen and (max-width: 550px) {
   .heading {
     font-size: 30px;
+    text-align: center;
   }
 
   .name,
@@ -98,5 +99,10 @@
   .inputDiv {
     gap: 10px;
     flex-direction: column;
+  }
+
+  .inputDiv2 {
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -22,8 +22,8 @@ const Accessories = () => {
     setAnimate(true);
   };
 
-  const handleLinkClick = () => {
-    navigate("/focus#more");
+  const handleNavigation = (index) => {
+    navigate(`${AccessoriesData[index].link}`);
   };
 
   const TitleCard = ({ heading, bgColor, index }) => {
@@ -52,7 +52,10 @@ const Accessories = () => {
     <>
       <div className={styles.container}>
         <div className={styles.leftDiv}>
-          <h3 className={styles.heading}>
+          <h3
+            className={styles.heading}
+            onClick={() => navigate("/accessories")}
+          >
             Sliver Can <span className={styles.special}>Accessories!</span>
           </h3>
           <p className={styles.desc}>
@@ -99,7 +102,10 @@ const Accessories = () => {
           </div>
         </div>
 
-        <div className={`${styles.rightDiv} ${animate ? styles.popOut : ""}`}>
+        <div
+          className={`${styles.rightDiv} ${animate ? styles.popOut : ""}`}
+          onClick={() => handleNavigation(itemIndex)}
+        >
           <img src={AccessoriesData[itemIndex].imagePath} alt="image" />
           <h5 className={styles.itemHeading}>
             {AccessoriesData[itemIndex].heading}
@@ -117,6 +123,7 @@ const Accessories = () => {
         <div
           className={styles.cardDiv1}
           style={{ backgroundImage: `url(${AccessoriesData[0].imagePath})` }}
+          onClick={() => handleNavigation(0)}
         >
           <div className={styles.mobileInnerCardDiv}>
             <h5 className={styles.itemHeading}>{AccessoriesData[0].heading}</h5>
@@ -127,6 +134,7 @@ const Accessories = () => {
           <div
             className={styles.cardDiv2}
             style={{ backgroundImage: `url(${AccessoriesData[1].imagePath})` }}
+            onClick={() => handleNavigation(1)}
           >
             <div className={styles.mobileInnerCardDiv}>
               <h5
@@ -141,6 +149,7 @@ const Accessories = () => {
           <div
             className={styles.cardDiv2}
             style={{ backgroundImage: `url(${AccessoriesData[2].imagePath})` }}
+            onClick={() => handleNavigation(2)}
           >
             <div className={styles.mobileInnerCardDiv}>
               <h5
@@ -157,6 +166,7 @@ const Accessories = () => {
           <div
             className={styles.cardDiv2}
             style={{ backgroundImage: `url(${AccessoriesData[3].imagePath})` }}
+            onClick={() => handleNavigation(3)}
           >
             <div className={styles.mobileInnerCardDiv}>
               <h5
@@ -171,6 +181,7 @@ const Accessories = () => {
           <div
             className={styles.cardDiv2}
             style={{ backgroundImage: `url(${AccessoriesData[4].imagePath})` }}
+            onClick={() => handleNavigation(4)}
           >
             <div className={styles.mobileInnerCardDiv}>
               <h5

@@ -25,9 +25,10 @@
 }
 
 .innerDiv1 {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   gap: 50px;
-  width: inherit;
 }
 
 .innerDiv1 img {
@@ -36,7 +37,7 @@
 }
 
 .div1Content {
-  padding-left: 100px;
+  padding-left: 150px;
   padding-top: 100px;
 }
 
@@ -141,12 +142,24 @@
   align-items: center;
   border: none;
   background: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.div4 button:hover {
+  gap: 25px;
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 1300px) {
   .div2 h3,
   .div4 h3 {
     font-size: 60px;
+  }
+
+  .div1Content {
+    padding-left: 50px;
+    padding-top: 50px;
   }
 }
 
@@ -157,11 +170,6 @@
 
   .innerDiv1 img {
     width: 700px;
-  }
-
-  .div1Content {
-    padding-left: 50px;
-    padding-top: 50px;
   }
 }
 
@@ -223,6 +231,8 @@
 
   .innerDiv1 {
     flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
   }
 
@@ -241,13 +251,18 @@
   }
 
   .div1 p,
-  .div4P .li {
+  .div4P, .li {
     font-size: 15px;
   }
 
   .div1Content h5,
   .div3Content h5 {
     font-size: 28px;
+    text-align: center;
+  }
+
+  .div1Content {
+    padding-left: 0;
   }
 
   .innerDiv1 {

@@ -45,6 +45,12 @@
   margin-bottom: 100px;
 }
 
+@media only screen and (max-width: 1500px) {
+  .contentDiv {
+    padding-bottom: 150px;
+  }
+}
+
 @media only screen and (max-width: 960px) {
   .container {
     height: 450px;
@@ -73,12 +79,18 @@
 @media only screen and (max-width: 800px) {
   .container {
     padding: 20px 20px 0 20px;
+    height: 600px;
   }
 
   .contentDiv {
-    padding: 30px 20px;
+    padding: 100px 50px;
+    padding-bottom: 120px;
     left: 20px;
     right: 20px;
+  }
+
+  .desc {
+    margin-bottom: 100px;
   }
 
   .heading {
@@ -88,7 +100,12 @@
 
 @media only screen and (max-width: 550px) {
   .container {
-    height: 400px;
+    height: 500px;
+  }
+
+  .contentDiv {
+    padding: 30px 20px;
+    padding-bottom: 100px;
   }
 
   .heading {
@@ -96,6 +113,6 @@
   }
 
   .desc {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 }

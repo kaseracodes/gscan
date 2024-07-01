@@ -11,18 +11,20 @@ const PlaceCard = ({ imagePath, office, factory, email, phones }) => {
       <h5 className={styles.country}>Registered Factory</h5>
       <p className={styles.address}>{factory}</p>
 
-      <div>
+      <div className={styles.contactDiv}>
         <div className={styles.contacts}>
           <img src="/images/mail.png" alt="images" />
           <a href={`mailto:${email}`}>{email}</a>
         </div>
         <div className={styles.contacts}>
           <img src="/images/phone.png" alt="images" />
-          {phones.map((item, index) => (
-            <a key={index} className={styles.phone} href={`tel:${item}`}>
-              {item}
-            </a>
-          ))}
+          <div className={styles.tele}>
+            {phones.map((item, index) => (
+              <a key={index} className={styles.phone} href={`tel:${item}`}>
+                {item}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>

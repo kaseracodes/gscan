@@ -13,7 +13,7 @@ import { useState, useEffect, useRef } from "react";
 //   where,
 //   limit,
 // } from "firebase/firestore";
-import { useLocation, useSearchParams } from "react-router-dom";
+import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import Pagination from "../pagination/Pagination";
 import { GalleryData } from "../../assets/galleryData";
 import GalleryTitleCard from "../galleryTitleCard/GalleryTitleCard";
@@ -31,8 +31,8 @@ const Categories = [
 ];
 
 const GalleryFeed = () => {
-  //   const [eventsData, setEventsData] = useState([]);
-  //   const [alleventsData, setAllEventsData] = useState([]);
+  const navigate = useNavigate();
+
   const [activeButton, setActiveButton] = useState(0);
   //   const [content, setContent] = useState("");
   //   const [user] = useAuthState(auth);
@@ -46,7 +46,7 @@ const GalleryFeed = () => {
   const handleClick = (index) => {
     setActiveButton(index);
 
-    const newButtonColors = Array(Categories.length).fill(COLORS.white);
+    const newButtonColors = Array(Categories.length).fill(COLORS.gray3);
     newButtonColors[index] = COLORS.orange;
     setButtonColors(newButtonColors);
   };
@@ -136,7 +136,11 @@ const GalleryFeed = () => {
           <hr className={styles.hr} />
         </div>
 
-        <Button content="Enquire Us" bgColor={COLORS.orange} />
+        <Button
+          content="Enquire Us"
+          bgColor={COLORS.orange}
+          onClick={() => navigate("/#contactDiv")}
+        />
       </div>
 
       <div className={styles.middleDiv} ref={middleDivRef}>
@@ -166,11 +170,6 @@ const GalleryFeed = () => {
           parentPage="gallery"
         />
       </div>
-
-      {/* <BussinessVerticals
-        BussinessVerticals={BussinessVerticalsItems}
-        buttonColor={COLORS.white}
-      /> */}
 
       <div className={styles.bvContainer}>
         <h5 className={styles.divHeading}>Media Categories</h5>

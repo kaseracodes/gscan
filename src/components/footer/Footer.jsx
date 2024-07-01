@@ -53,15 +53,9 @@ const Footer = ({ pageType }) => {
               <Link to="/about-us" className={styles.anchor}>
                 About Us
               </Link>
-              <Link to="/sliver-can" className={styles.anchor}>
-                Sliver Can
-              </Link>
             </div>
 
             <div className={styles.innerAnchorDiv}>
-              <Link to="/castor" className={styles.anchor}>
-                Castor
-              </Link>
               <Link to="/gallery" className={styles.anchor}>
                 Gallery
               </Link>
@@ -71,6 +65,12 @@ const Footer = ({ pageType }) => {
             </div>
 
             <div className={styles.innerAnchorDiv}>
+              <Link to="/sliver-can" className={styles.anchor}>
+                Sliver Can
+              </Link>
+              <Link to="/castor" className={styles.anchor}>
+                Castor
+              </Link>
               <Link to="/accessories" className={styles.anchor}>
                 Accessories
               </Link>

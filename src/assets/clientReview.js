@@ -61,7 +61,7 @@ export const ClientReview = [
     heading: "Victoria jute<br /><br />",
     description:
       "Our focus is on value-chain analysis, supply and demand analysis...",
-    bgColor: COLORS.lightGray,
+    bgColor: COLORS.white,
   },
 
   {

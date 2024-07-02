@@ -96,8 +96,8 @@ const Footer = ({ pageType }) => {
       </div>
       <hr />
       <p className={styles.copyrightText}>
-        Copyrighted &copy; {new Date().getFullYear()} Upload by AntiNode
-        Technologies.
+        Copyrighted &copy; {new Date().getFullYear()} Upload by House of
+        Development.
       </p>
     </div>
   );

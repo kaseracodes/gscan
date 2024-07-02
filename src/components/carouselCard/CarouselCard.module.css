@@ -50,12 +50,14 @@
   font-weight: 700;
   margin: 0;
   margin-bottom: 0px;
+  text-align: center;
 }
 
 .desc {
   font-size: 15px;
   font-weight: 400;
   margin: 0;
+  text-align: center;
 }
 
 .btn {

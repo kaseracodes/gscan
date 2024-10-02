@@ -62,7 +62,7 @@ const CarouselSection = ({ heading, description, cardData, divId }) => {
               <CarouselCard
                 imagePath={item.imagePath}
                 heading={item.heading}
-                description={item.description}
+                // description={item.description}
                 bgColor={item.bgColor}
               />
             </div>

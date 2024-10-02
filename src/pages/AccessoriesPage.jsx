@@ -162,16 +162,18 @@ const AccessoriesPage = () => {
       <div className={styles.div5}>
         <div className={styles.div5Content}>
           <h5 className={styles.subHeading}>
-            <span className={styles.special}>Box Type</span> Spring
+            <span className={styles.special}>Pantograph</span> Spring
           </h5>
           <ul>
             <li className={`${styles.para} ${styles.div5Para}`}>
-              Precision-tempered to maintain uniform tension, ensuring smooth
-              and reliable sliver handling in high-speed operations.
+              Engineered for superior flexibility with a unique design, ensuring
+              efficient sliver movement and minimizing breakage.
+              
             </li>
             <li className={`${styles.para} ${styles.div5Para}`}>
-              Made from high-carbon spring steel wire (ISO specs), hardened and
-              tempered for maximum strength and longevity.
+              Crafted from high-quality materials, these springs endure the
+              demands of high-speed operations, providing long-lasting
+              performance.
             </li>
           </ul>
           <img
@@ -183,17 +185,16 @@ const AccessoriesPage = () => {
 
         <div className={styles.div5Content}>
           <h5 className={styles.subHeading}>
-            <span className={styles.special}>Pantograph</span> Spring
+            <span className={styles.special}>Box Type</span> Spring
           </h5>
           <ul>
             <li className={`${styles.para} ${styles.div5Para}`}>
-              Engineered for superior flexibility with a unique design, ensuring
-              efficient sliver movement and minimizing breakage.
+              Precision-tempered to maintain uniform tension, ensuring smooth
+              and reliable sliver handling in high-speed operations.
             </li>
             <li className={`${styles.para} ${styles.div5Para}`}>
-              Crafted from high-quality materials, these springs endure the
-              demands of high-speed operations, providing long-lasting
-              performance.
+              Made from high-carbon spring steel wire (ISO specs), hardened and
+              tempered for maximum strength and longevity.
             </li>
           </ul>
           <img

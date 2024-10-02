@@ -130,9 +130,11 @@ const SliverCanPage = () => {
           GS CAN is known for.
         </p>
 
-        <button>
-          Explore More <img src="/images/external.png" alt="external link" />
-        </button>
+        <a href="https://drive.google.com/file/d/1302DQRqCtMhLtixL9sf1zBxal7teTrFq/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>
+          <button>
+            Explore More <img src="/images/external.png" alt="external link" />
+          </button>
+        </a>
       </div>
 
       <ContactUs />

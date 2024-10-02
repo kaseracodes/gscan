@@ -53,7 +53,7 @@ const Homepage = () => {
         description={description}
       />
 
-      <CoreValues heading="Our Teaming Principles" cardData={CoreValuesData} />
+      <CoreValues heading="Our Purpose & Values" cardData={CoreValuesData} />
 
       <SliverCan />
 

@@ -1,22 +1,22 @@
 export const CoreValuesData = [
   {
     imagePath: "/images/core_values/image1.png",
-    heading: "Adaptability",
+    heading: "Our Mission",
     description:
-      "Our ability to pivot with agility ensures we meet every obstacle head-on, adapt to the change, and emerge stronger together.",
+      "To consistently deliver high-quality products, ensuring reliability, customer satisfaction and timely delivery.",
   },
 
   {
     imagePath: "/images/core_values/image2.png",
-    heading: "Result-Oriented",
+    heading: "Our Vision",
     description:
-      "We measure our progress by the impact we make, ensuring every effort leads to meaningful results that exceed expectations.",
+      "To be recognized globally as the most trusted, reliable, innovative, and valued manufacturer of Sliver Cans.",
   },
 
   {
     imagePath: "/images/core_values/image3.png",
-    heading: "Curiosity",
+    heading: "Company Profile",
     description:
-      "With curiosity-fueling our endeavors, we innovate, discover, and continuously push the boundaries of what's possible.",
+      "Over 30 years of excellence and 35,000 sq. ft of manufacturing facility producing all kinds of Jute Mill Accessories.",
   },
 ];

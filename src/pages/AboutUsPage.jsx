@@ -102,7 +102,7 @@ const AboutUsPage = () => {
       <QualityPolicy />
 
       <CarouselSection
-        heading="What our Clients say about us"
+        heading="Our Clients"
         description="Our partners include leading textile manufacturers and innovative jute producers who trust us for our superior quality products and reliable service. From industry giants to emerging enterprises, our clientele reflects our commitment to excellence"
         cardData={ClientReview}
         divId="clients"

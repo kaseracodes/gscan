@@ -134,7 +134,7 @@ const Navbar = ({ bgColor, pageType }) => {
           modalContents={[
             { desc: "Sliver Can", link: "/sliver-can" },
             { desc: "Accessories", link: "/accessories" },
-            { desc: "Castor", link: "/castor" },
+            { desc: "Castor Wheels", link: "/castor" },
           ]}
         />
         <Link

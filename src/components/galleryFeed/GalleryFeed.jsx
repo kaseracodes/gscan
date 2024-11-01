@@ -24,10 +24,8 @@ import GalleryFeedCard from "../galleryFeedCard/GalleryFeedCard";
 const Categories = [
   "All",
   "Infrastructure",
-  "Workforce",
-  "Vision",
   "Events",
-  "Clients",
+  "Installations",
 ];
 
 const GalleryFeed = () => {
